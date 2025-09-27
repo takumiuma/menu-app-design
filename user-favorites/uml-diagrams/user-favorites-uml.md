@@ -82,11 +82,11 @@ classDiagram
         +findOrCreateUser(auth0Sub: string) User
     }
 
-    %% リレーション
-    User ||--o{ Favorite : "1対多"
-    Menu ||--o{ Favorite : "1対多"
-    Favorite }o--|| User : "多対1"
-    Favorite }o--|| Menu : "多対1"
+    %% リレーション（多重度で表現）
+    User "1" --> "0..*" Favorite
+    Menu "1" --> "0..*" Favorite
+    Favorite "1" --> "1" User
+    Favorite "1" --> "1" Menu
 
     FavoriteAPI --> FavoriteService : "使用"
     FavoriteButton --> FavoriteStore : "使用"
@@ -367,5 +367,3 @@ stateDiagram-v2
     Error --> Favorite : リトライ成功
     Error --> Error : リトライ失敗
 ```
-
-これらのUML図により、ユーザーお気に入り機能の全体像を多角的に理解できます。各図は異なる観点からシステムを表現しており、開発・保守・拡張時の参考資料として活用できます。
