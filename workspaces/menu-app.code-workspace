@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      "path": "../../front-projects/vue-menu",
+    },
+    {
+      "path": "../../go/go-menu",
+    },
+    {
+      "path": "../../go/go-menu-bff",
+    },
+    {
+      "name": "#workspace",
+      "path": ".",
+    }
+  ],
+  "settings": {},
+}
