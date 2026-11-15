@@ -10,8 +10,10 @@
       "path": "../../go/go-menu-bff",
     },
     {
-      "name": "#workspace",
-      "path": ".",
+      "path": "../../php-menu",
+    },
+    {
+      "path": "../",
     }
   ],
   "settings": {},
