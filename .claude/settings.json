@@ -160,6 +160,7 @@
       ],
       "allowRead": [
         ".",
+        "~/.gitconfig",
         "~/front-projects/vue-menu",
         "~/go/go-menu",
         "~/go/go-menu-bff",
