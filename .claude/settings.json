@@ -1,7 +1,6 @@
 {
   "permissions": {
     "defaultMode": "default",
-    "blockReadsOutsideWorkingDirectories": true,
     "allow": [
       "Bash(git status *)",
       "Bash(git log *)",
@@ -161,6 +160,7 @@
       "allowRead": [
         ".",
         "~/.gitconfig",
+        "~/.gitignore_global",
         "~/front-projects/vue-menu",
         "~/go/go-menu",
         "~/go/go-menu-bff",
