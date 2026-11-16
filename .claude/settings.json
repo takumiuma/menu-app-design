@@ -182,7 +182,10 @@
       "yarn install *",
       "yarn up *",
       "yarn add *",
-      "yarn npm audit *"
+      "yarn npm audit *",
+      "yarn test:run *",
+      "yarn type-check *",
+      "yarn lint *"
     ],
     "filesystem": {
       "denyRead": [
@@ -216,6 +219,7 @@
         "objects.githubusercontent.com",
         "codeload.github.com",
         "registry.npmjs.org",
+        "repo.yarnpkg.com",
         "proxy.golang.org",
         "sum.golang.org",
         "packagist.org",
