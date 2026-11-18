@@ -31,7 +31,14 @@
       "Bash(gh workflow view *)",
       "Bash(gh workflow list *)",
       "Bash(gh pr create *)",
-      "Bash(gh pr edit *)"
+      "Bash(gh pr edit *)",
+      "Bash(yarn install *)",
+      "Bash(yarn up *)",
+      "Bash(yarn add *)",
+      "Bash(yarn npm audit *)",
+      "Bash(yarn test:run *)",
+      "Bash(yarn type-check *)",
+      "Bash(yarn lint *)"
     ],
     "deny": [
       "Bash(git reset *)",
@@ -153,6 +160,33 @@
   },
   "sandbox": {
     "enabled": true,
+    "excludedCommands": [
+      "git push origin feature/*",
+      "git push -u origin feature/*",
+      "git push --set-upstream origin feature/*",
+      "gh issue view *",
+      "gh issue list *",
+      "gh pr view *",
+      "gh pr list *",
+      "gh pr diff *",
+      "gh pr checks *",
+      "gh pr status *",
+      "gh repo view *",
+      "gh repo list *",
+      "gh run view *",
+      "gh run list *",
+      "gh workflow view *",
+      "gh workflow list *",
+      "gh pr create *",
+      "gh pr edit *",
+      "yarn install *",
+      "yarn up *",
+      "yarn add *",
+      "yarn npm audit *",
+      "yarn test:run *",
+      "yarn type-check *",
+      "yarn lint *"
+    ],
     "filesystem": {
       "denyRead": [
         "~/"
@@ -164,13 +198,17 @@
         "~/front-projects/vue-menu",
         "~/go/go-menu",
         "~/go/go-menu-bff",
-        "~/php-menu"
+        "~/php-menu",
+        "~/.cache/node/corepack",
+        "~/.yarn/berry"
       ],
       "allowWrite": [
         "~/front-projects/vue-menu",
         "~/go/go-menu",
         "~/go/go-menu-bff",
-        "~/php-menu"
+        "~/php-menu",
+        "~/.cache/node/corepack",
+        "~/.yarn/berry"
       ]
     },
     "network": {
@@ -181,6 +219,7 @@
         "objects.githubusercontent.com",
         "codeload.github.com",
         "registry.npmjs.org",
+        "repo.yarnpkg.com",
         "proxy.golang.org",
         "sum.golang.org",
         "packagist.org",
