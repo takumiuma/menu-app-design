@@ -32,6 +32,7 @@
       "Bash(gh workflow list *)",
       "Bash(gh pr create *)",
       "Bash(gh pr edit *)",
+      "Bash(gh actions-lock)",
       "Bash(yarn install *)",
       "Bash(yarn up *)",
       "Bash(yarn add *)",
